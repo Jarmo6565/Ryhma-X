@@ -9,30 +9,39 @@
 <body>
   <h1>Kyselylomake</h1>
   <form action="index.html" method="post">
-    <div class="nameforms">
+  <div class="nameform">
       <label for="etunimi">Etunimi:</label><br>
-      <input type="text" id="etunimi" value=""><br>
+        <input type="text" id="etunimi" value=""><br>
       <label for="sukunimi">Sukunimi:</label><br>
-      <input type="text" id="sukunimi" value=""><br>
+        <input type="text" id="sukunimi" value=""><br>
     </div>
-    <div class="radioforms">
+    <div class="genderform">
+    <p>Sukupuoli<br>
+      <select id="sukupuoli">
+        <option value=""></option>
+        <option value="Mies">Mies</option>
+        <option value="Nainen">Nainen</option>
+        <option value="Muu">En halua määritellä</option>
+  </select></p>
+  </div>
+    <div class="radioform">
     <p>Nukutko öisin hyvin?<br>
       <input type="radio" id="unijoo" value="">
-      <label for="unijoo">Kyllä</label><br>
+        <label for="unijoo">Kyllä</label><br>
       <input type="radio" id="uniei" value="">
-      <label for="uniei">Ei</label><br></p>
+        <label for="uniei">Ei</label><br></p>
     </div>
-    <div class="checkforms">
+    <div class="checkform">
     <p>Mitä kulkuneuvoja käytät?<br>
       <input type="checkbox" id="kulku1" value="">
-      <label for="kulku1">Polkupyörä</label><br>
+        <label for="kulku1">Polkupyörä</label><br>
       <input type="checkbox" id="kulku2" value="">
-      <label for="kulku2">Auto</label><br>
+        <label for="kulku2">Auto</label><br>
       <input type="checkbox" id="kulku3" value="">
-      <label for="kulku3">Julkinen liikenne</label><br></p>
+        <label for="kulku3">Julkinen liikenne</label><br></p>
     </div>
     <div class="textform">
-    <label for="palaute">Palaute:</label><br>
+      <label for="palaute">Palaute:</label><br>
     <input type="text" id="palaute" value=""><br><br>
     </div>
     <button type="button" onclick="myFunction()">Lähetä</button><br>

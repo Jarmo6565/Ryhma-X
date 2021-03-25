@@ -1,0 +1,42 @@
+
+
+body {
+  background-color: lightblue;
+}
+
+
+  .center {
+          margin: auto;
+          width: 10%;
+          border: 3px solid black;
+          padding: 200px;
+}
+
+
+
+
+
+.center h1 {
+                font-size: 45px;
+                text-align: center;
+
+}
+
+
+.nimet {
+        font-size: 20px;
+        width: 50px;
+}
+
+
+.unikysely {
+            font-size: 20px;
+}
+
+.kulkuneuvot {
+            font-size: 20px;
+}
+
+.palaute  {
+            font-size: 20px;
+}

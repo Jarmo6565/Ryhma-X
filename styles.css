@@ -1,17 +1,19 @@
 
-
-body {
+bodu {
   background-color: lightblue;
 }
 
 
   .center {
-          margin: auto;
+          text-align: center;
+          margin: 500px;
+          heigth: 400px:
           width: 10%;
           border: 3px solid black;
-          padding: 200px;
-}
+          padding: 100px;
 
+
+}
 
 
 
@@ -24,6 +26,7 @@ body {
 
 
 .nimet {
+        text-align: center;
         font-size: 20px;
         width: 50px;
 }

@@ -9,7 +9,7 @@ function myFunction() {
   var feedback = document.getElementById("palaute").value;
   var gender = document.getElementById("sukupuoli").value;
 
-//Jos nimi on tyhjä
+//Jos nimikenttä on tyhjä
   if(name == "") {
   alert("Syötä nimesi");
   return false;

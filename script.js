@@ -7,6 +7,7 @@ function myFunction() {
   var car2 = document.getElementById("kulku2");
   var car3 = document.getElementById("kulku3");
   var feedback = document.getElementById("palaute").value;
+  var gender = document.getElementById("sukupuoli").value;
 
 //Jos nimi on tyhjä
   if(name == "") {
@@ -15,6 +16,10 @@ function myFunction() {
   //Jos sukunimi on tyhjä
 } else if(lastname == "") {
   alert("Syötä sukunimesi");
+  return false;
+  //Jos sukupuoli sarake on tyhjä
+} else if(gender == "") {
+  alert("Valitse jokin vaihtoehto sukupuoli valikosta");
   return false;
   //Jos nukutko hyvin ei ole vastattu mitään
 } else if(sleepyes.checked == false && sleepno.checked == false) {

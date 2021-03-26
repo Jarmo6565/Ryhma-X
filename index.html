@@ -7,43 +7,38 @@
           <title>Kyselylomake</title>
 </head>
 <body>
-  <h1>Kyselylomake</h1>
-  <form action="index.html" method="post">
-  <div class="nimet">
-      <label for="etunimi">Etunimi:</label><br>
-        <input type="text" id="etunimi" value=""><br>
-      <label for="sukunimi">Sukunimi:</label><br>
-        <input type="text" id="sukunimi" value=""><br>
-    </div>
-    <div class="genderform">
+  <div class="lomake">
+    <div class="center">
+      <h1>Kyselylomake</h1>
+        <form action="index.html" method="post">
+          <label for="etunimi">Etunimi:</label><br>
+            <input type="text" id="etunimi" value=""><br>
+              <label for="sukunimi">Sukunimi:</label><br>
+                <input type="text" id="sukunimi" value=""><br>
     <p>Sukupuoli<br>
       <select id="sukupuoli">
         <option value=""></option>
-        <option value="Mies">Mies</option>
-        <option value="Nainen">Nainen</option>
-        <option value="Muu">En halua määritellä</option>
-  </select></p>
-  </div>
-    <div class="unikysely">
+          <option value="Mies">Mies</option>
+            <option value="Nainen">Nainen</option>
+            <option value="Muu">En halua määritellä</option>
+              </select></p>
     <p>Nukutko öisin hyvin?<br>
-      <input type="radio" id="unijoo" value="">
+      <input type="radio" id="unijoo" name="radio" value="">
         <label for="unijoo">Kyllä</label><br>
-      <input type="radio" id="uniei" value="">
-        <label for="uniei">Ei</label><br></p>
-    </div>
-    <div class="kulkuneuvot">
+          <input type="radio" id="uniei" name="radio" value="">
+            <label for="uniei">Ei</label><br></p>
     <p>Mitä kulkuneuvoja käytät?<br>
       <input type="checkbox" id="kulku1" value="">
         <label for="kulku1">Polkupyörä</label><br>
-      <input type="checkbox" id="kulku2" value="">
-        <label for="kulku2">Auto</label><br>
-      <input type="checkbox" id="kulku3" value="">
-        <label for="kulku3">Julkinen liikenne</label><br></p>
-    </div>
-    <div class="textform">
+          <input type="checkbox" id="kulku2" value="">
+            <label for="kulku2">Auto</label><br>
+              <input type="checkbox" id="kulku3" value="">
+                <label for="kulku3">Julkinen liikenne</label><br></p>
+    <div class="ppalaute">
       <label for="palaute">Palaute:</label><br>
-    <input type="text" id="palaute" value=""><br><br>
-    </div>
+        <textarea id="palaute" value=""></textarea><br><br>
+      </div>
+        </div>
     <button type="button" onclick="myFunction()">Lähetä</button><br>
 </form>
 </div>

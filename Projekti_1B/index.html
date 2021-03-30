@@ -1,10 +1,57 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+    <script type="text/javascript" src="script.js" charset="utf-8"></script>
+      <link rel="stylesheet" href="styles.css">
+        <meta charset="utf-8">
+          <title>Kyselylomake</title>
+</head>
+<body>
+  <div id="kyselylomake">
+    <div class="center">
+      <h1 id="otsikko">Kyselylomake</h1>
+      <p id="kuvaus">Keräämme tietoja vain omaan käyttöömme!</p>
+        <form action="index.html" method="post">
+          <label for="etunimi">Etunimi:</label><br>
+            <input type="text" id="nimi" placeholder="Jaska"><br>
+              <label for="sukunimi">Sukunimi:</label><br>
+                <input type="text" id="sukunimi" placeholder="Jokunen"><br>
+                <label for="age">Ikä:</label><br>
+                <input type="number" id="ika" placeholder="Syötä ikäsi"><br>
+                <label for="sposti">Sähköposti osoite:</label><br>
+                <input type="text" id="email" placeholder="jaska.jokunen@gmail.com"><br>
+    <p>Sukupuoli<br>
+      <select id="sukupuoli">
+        <option value=""></option>
+          <option value="Mies">Mies</option>
+            <option value="Nainen">Nainen</option>
+            <option value="Muu">En halua määritellä</option>
+              </select></p>
 
-  </body>
+<!-- Tästä eteenpäin en vielä muokannut mitään -->
+
+
+
+
+    <p>Nukutko öisin hyvin?<br>
+      <input type="radio" id="unijoo" name="radio" value="">
+        <label for="unijoo">Kyllä</label><br>
+          <input type="radio" id="uniei" name="radio" value="">
+            <label for="uniei">Ei</label><br></p>
+    <p>Mitä kulkuneuvoja käytät?<br>
+      <input type="checkbox" id="kulku1" value="">
+        <label for="kulku1">Polkupyörä</label><br>
+          <input type="checkbox" id="kulku2" value="">
+            <label for="kulku2">Auto</label><br>
+              <input type="checkbox" id="kulku3" value="">
+                <label for="kulku3">Julkinen liikenne</label><br></p>
+    <div class="ppalaute">
+      <label for="palaute">Palaute:</label><br>
+        <textarea id="palaute" placeholder="Anna meille palautetta..."></textarea><br><br>
+      </div>
+        </div>
+    <button type="button" onclick="myFunction()">Lähetä</button><br>
+</form>
+</div>
+</body>
 </html>

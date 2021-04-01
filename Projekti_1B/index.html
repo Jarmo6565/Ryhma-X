@@ -14,18 +14,18 @@
 <!-- Nimi, ikä ja sähköposti -->
       <form action="index.html" id="kyselylomake" method="post">
       <label for="nimisyotto">Nimi:</label><br>
-      <input type="text" id="nimi" value="" placeholder="Erkki Esimerkki"><br>
+      <input type="text" id="nimi" value="" placeholder="Erkki Esimerkki" required><br>
       <div id="joslyhyt"></div>
       <label for="emailsyotto">Sähköposti osoite:</label><br>
-      <input type="email" id="email" value="" placeholder="erkki.esimerkki@gmail.com"><br>
+      <input type="email" id="email" value="" placeholder="erkki.esimerkki@gmail.com" required><br>
       <div id="sposti"></div>
       <label for="ikasyotto">Ikä:</label><br>
-      <input type="number" min="18" max="25" id="ika" value="" placeholder="Anna ikäsi"><br>
+      <input type="number" min="18" max="25" id="ika" value="" placeholder="Anna ikäsi" required><br>
       <div id="einumero"></div>
 
 
     <p>Sukupuoli<br>
-      <select id="pudotus">
+      <select id="pudotus" required>
         <option value="" disabled selected>Valitse:</option>
         <option value="Mies">Mies</option>
         <option value="Nainen">Nainen</option>
@@ -34,24 +34,28 @@
 
 
     <p>Onko sinulla lapsia?<br>
-      <input type="radio" id="lapsijoo" name="radio" value="">
+      <input type="radio" id="lapsijoo" name="radio" value="" required>
       <label for="lapsia1">Kyllä</label><br>
         <input type="radio" id="lapsiei" name="radio" value="">
         <label for="lapsia2">Ei</label><br></p>
 
 
     <p>Mitä Tv-ohjelmia näistä katsot?<br>
-      <input type="checkbox" id="ohj1" value="">
+      <div class="checkbox-group required">
+      <input type="checkbox" id="ohj1" value="1">
         <label for="kulku1">Timeless</label><br>
-        <input type="checkbox" id="ohj2" value="">
+        <input type="checkbox" id="ohj2" value="2">
         <label for="kulku2">West World</label><br>
-        <input type="checkbox" id="ohj3" value="">
+        <input type="checkbox" id="ohj3" value="3">
         <label for="kulku3">Lupin</label><br></p>
+      </div>
+
+
 
 
     <div class="ppalaute">
       <label for="palaute">Palaute:</label><br>
-        <textarea id="palaute" placeholder="Anna meille palautetta..."></textarea><br><br>
+        <textarea id="palaute" placeholder="Anna meille palautetta..." required></textarea><br><br>
       </div>
 
     <button type="button" id="laheta" onclick="myFunction()">Lähetä</button><br>

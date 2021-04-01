@@ -1,0 +1,50 @@
+body {
+}
+
+h1 {
+}
+
+
+.center {
+width: 320px;
+height: auto;
+margin: auto;
+border: 1px solid black;
+border-radius: 5px;
+padding-left: 30px;
+padding-right: 30px;
+padding-bottom: 30px;
+}
+
+input {
+width: 95%;
+height: 15px;
+padding: 2px;
+}
+
+select {
+width: auto;
+height: auto;
+}
+
+input[type="radio"] {
+width: 15px;
+height: 15px;
+}
+
+input[type="checkbox"] {
+width: 15px;
+height: 15px;
+}
+
+textarea {
+width: 95%;
+height: 100px;
+padding: 2px;
+}
+
+button {
+width: auto;
+height: 30%;
+padding: 10px;
+}

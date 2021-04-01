@@ -20,10 +20,9 @@ function myFunction(){
   lomake.email.focus();
     return false;
   }
-
   //Ikäkenttä
-  if (isNaN(age)){
-    document.getElementById('einumero').innerHTML = "Anna ikäsi numeroina";
+  if (isNaN(age) || age < 18 || age > 25){
+    document.getElementById('einumero').innerHTML = "Syötä ikäsi oikein";
     return false;
     }
   }

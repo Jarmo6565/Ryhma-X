@@ -7,13 +7,12 @@
           <title>Kyselylomake</title>
 </head>
 <body>
-  <div id="kyselylomake">
     <div class="center">
       <h1 id="otsikko">Kyselylomake</h1>
       <p id="kuvaus">Keräämme tietoja vain omaan käyttöömme!</p>
 
 <!-- Nimi, ikä ja sähköposti -->
-      <form action="index.html" method="post">
+      <form action="index.html" id="kyselylomake" method="post">
       <label for="nimisyotto">Nimi:</label><br>
       <input type="text" id="nimi" value="" placeholder="Erkki Esimerkki"><br>
       <div id="joslyhyt"></div>
@@ -53,7 +52,7 @@
       <label for="palaute">Palaute:</label><br>
         <textarea id="palaute" placeholder="Anna meille palautetta..."></textarea><br><br>
       </div>
-        </div>
+      
     <button type="button" onclick="myFunction()">Lähetä</button><br>
 </form>
 </div>

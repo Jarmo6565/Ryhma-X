@@ -12,16 +12,18 @@
       <p id="kuvaus">Keräämme tietoja 18-25 vuotiailta!</p>
 
 <!-- Nimi, ikä ja sähköposti -->
-      <form action="index.html" id="kyselylomake" method="post">  
+      <form action="index.html" id="kyselylomake" method="post">
       <label for="nimisyotto">Nimi:</label><br>
-      <input type="text" id="nimi" value="" placeholder="Erkki Esimerkki" required><br>
-      <div id="joslyhyt"></div>
+      <input type="text" id="nimi" value="" placeholder="Erkki Esimerkki" aria-describedby="name-format" required aria-required=”true”><br>
+      <span id="joslyhyt"></span>
+
 
       <label for="emailsyotto">Sähköposti osoite:</label><br>
-      <input type="email" id="email" value="" placeholder="erkki.esimerkki@gmail.com" required><br>
+      <input type="email" id="email" value="" placeholder="erkki.esimerkki@gmail.com" required aria-required="true"><br>
       <div id="sposti"></div>
+
       <label for="ikasyotto">Ikä:</label><br>
-      <input type="number" min="18" max="25" id="ika" value="" placeholder="Anna ikäsi" required><br>
+      <input type="number" id="ika" value="" placeholder="Anna ikäsi" required aria-required="true" aria-required="true" min="18" max="25"><br>
       <div id="einumero"></div>
 
 
@@ -35,14 +37,14 @@
 
 
     <p>Onko sinulla lapsia?<br>
-      <input type="radio" id="lapsijoo" name="radio" value="" required>
+      <input type="radio" id="lapsijoo" name="radio" value="" required aria-required="true">
       <label for="lapsia1">Kyllä</label><br>
         <input type="radio" id="lapsiei" name="radio" value="">
         <label for="lapsia2">Ei</label><br></p>
 
 
     <p>Mitä Tv-ohjelmia näistä katsot?<br>
-      <input type="checkbox" name="check" id="ohj1" value="" required>
+      <input type="checkbox" name="check" id="ohj1" value="" required aria-required="true">
         <label for="kulku1">Timeless</label><br>
         <input type="checkbox" name="check" id="ohj2" value="">
         <label for="kulku2">West World</label><br>
@@ -55,13 +57,13 @@
 
     <div class="ppalaute">
       <label for="palaute">Palaute:</label><br>
-        <textarea id="palaute" placeholder="Anna meille palautetta..." required></textarea><br><br>
+        <textarea id="palaute" placeholder="Anna meille palautetta..." required aria-required="true"></textarea><br><br>
       </div>
 
     <button type="button" id="laheta" onclick="myFunction()">Lähetä</button><br>
 </form>
 </div>
 
-<!-- Css tiedostoon pitää muistaa laittaa esim. tooltipillä se et se näyttää vihjeitä miten täyttää noit kenttiä ku hiiri on päällä -->
+
 </body>
 </html>

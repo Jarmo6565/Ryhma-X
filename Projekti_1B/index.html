@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <script type="text/javascript" src="script.js" charset="utf-8"></script>
-      <link rel="stylesheet" href="styles.css">
+  <!--  <script type="text/javascript" src="script.js" charset="utf-8"></script> -->
+    <link rel="stylesheet" href="styles.css">
         <meta charset="utf-8">
           <title>Kyselylomake</title>
 </head>
@@ -12,10 +12,10 @@
       <p id="kuvaus">Keräämme tietoja 18-25 vuotiailta!</p>
 
 <!-- Nimi, ikä ja sähköposti -->
-      <form action="index.html" id="kyselylomake" method="post">
+      <form action="" id="kyselylomake" method="post">
       <label for="nimisyotto">Nimi:</label><br>
-      <input type="text" id="nimi" value="" placeholder="Erkki Esimerkki" aria-describedby="name-format" required aria-required=”true”><br>
-      <span id="joslyhyt"></span>
+      <input type="text" id="nimi" value="" placeholder="Erkki Esimerkki" required pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" title="firstname lastname" aria-required="true" aria-describedby="name-format"><br>
+      <span id="joslyhyt" class="help"></span>
 
 
       <label for="emailsyotto">Sähköposti osoite:</label><br>

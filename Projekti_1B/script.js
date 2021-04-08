@@ -1,4 +1,4 @@
-function myFunction(){
+/*function myFunction(){
 
   var name = document.getElementById('nimi').value;
   var sahkoposti = document.getElementById('email').value;
@@ -26,7 +26,7 @@ function myFunction(){
     document.getElementById('einumero').innerHTML = "Syötä ikäsi oikein";
     return false;
     }
-  }
+  } */
 
   /*
 

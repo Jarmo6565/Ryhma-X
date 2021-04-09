@@ -25,6 +25,27 @@ padding-bottom: 30px;
 background-color: rgba(200,0,150,0.3);
 }
 
+.help {
+    display:none;
+    font-size:90%;
+}
+
+input:focus + .help {
+    display:inline-block;
+}
+
+input:valid,
+input:in-range {
+    background:hsl(120, 50%, 90%);
+    border-color:hsl(120, 50%, 50%);
+}
+
+input:invalid,
+input:out-of-range {
+    border-color:hsl(0, 50%, 50%);
+    background:hsl(0, 50%, 90%);
+}
+
 input {
 width: 95%;
 height: 15px;

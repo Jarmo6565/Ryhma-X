@@ -1,4 +1,4 @@
-function myFunction(){
+/*function myFunction(){
 
   var name = document.getElementById('nimi').value;
   var sahkoposti = document.getElementById('email').value;
@@ -10,29 +10,7 @@ function myFunction(){
   if (name.length <= 5){
     document.getElementById('joslyhyt').innerHTML = "Antamasi nimi on liian lyhyt";
     return false;
-
-
-    /*
-
-    function getFormvalue()
-    {
-      var x=document.getElementById("kyselylomake");
-      for (var i=0;i<5.length;i++)
-      {
-       if (x.elements[i].value!='Submit')
-        {
-          console.log(x.elements[i].value);
-         }
-       }
-    }
-
-*/
-
-
-
-
-
-
+  }
   //S-postikenttä
   function emailIsValid (email){
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
@@ -48,4 +26,18 @@ function myFunction(){
     document.getElementById('einumero').innerHTML = "Syötä ikäsi oikein";
     return false;
     }
-  }
+  } */
+
+  /*
+
+  function getFormvalue()
+  {
+    var x=document.getElementById("kyselylomake");
+    for (var i=0;i<5.length;i++)
+    {
+     if (x.elements[i].value!='Submit')
+      {
+        console.log(x.elements[i].value);
+       }
+     }
+*/

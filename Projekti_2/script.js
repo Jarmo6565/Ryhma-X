@@ -1,3 +1,16 @@
+function myFunction() {
+
+var but1 = parseInt(document.getElementById("nappi1").value);
+var but2 = parseInt(document.getElementById("nappi2").value);
+var but3 = parseInt(document.getElementById("nappi3").value);
+var but4 = parseInt(document.getElementById("nappi4").value);
+var but5 = parseInt(document.getElementById("nappi5").value);
+var but6 = parseInt(document.getElementById("nappi6").value);
+var but7 = parseInt(document.getElementById("nappi7").value);
+var but8 = parseInt(document.getElementById("nappi8").value);
+var but9 = parseInt(document.getElementById("nappi9").value);
+var but10 = parseInt(document.getElementById("nappi10").value);
+
 function numeroVoittaja(min, max) {
   min = 1;
   max = 10;
@@ -14,19 +27,6 @@ class Game {
     this.arvaukset = []
     // Arpoo meille voittavan numeron
     this.voittoNumero = numeroVoittaja()
-  }
-
-  // methods
-  difference() {
-    return Math.abs(this.pelaajanArvaus - this.voittoNumero)
-  }
-
-  isLower() {
-    if (this.pelaajanArvaus < this.voittoNumero) {
-      return true;
-    } else {
-      return false;
-    }
   }
 
 
@@ -53,3 +53,5 @@ tarkistus() {
     }
 
   }
+}
+}

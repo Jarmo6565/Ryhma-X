@@ -12,6 +12,7 @@
     <h3>Paina numeroa ja arvaa mitä lukua haetaan!</h3>
     <div class="boxit">
       <div class="box1">
+<<<<<<< HEAD
       <button type="button" value="1" id="nappi1">1</button>
       <button type="button" value="2" id="nappi2">2</button>
       <button type="button" value="3" id="nappi3">3</button>
@@ -27,8 +28,55 @@
       <button type="button" value="9" id="nappi9">9</button>
       <div class="box4">
       <button type="button" value="10" id="nappi10">10</button>
+=======
+      <button type="button" id="luku2">1</button>
+      <button type="button" id="luku2">2</button>
+      <button type="button" id="luku2">3</button>
+    </div>
+    <div class="box2">
+      <button type="button" id="luku2">4</button>
+      <button type="button" id="luku2">5</button>
+      <button type="button" id="luku2">6</button>
+    </div>
+    <div class="box3">
+      <button type="button" id="luku2">7</button>
+      <button type="button" id="luku2">8</button>
+      <button type="button" id="luku2">9</button>
+      <div class="box4">
+      <button type="button" id="luku2">10</button>
+>>>>>>> 4f171f516f7f5ac1e70dc7d854c495577b4d958b
     </div>
     </div>
+
+      <script language="JavaScript">
+
+      function tarkista3(){
+
+      	var arvaus = 1*document.getElementById("luku2").value;
+
+      	if (arvaus == 6){
+      		window.alert("Arvasit oikein!");
+      	}else if (arvaus < 6){
+      		window.alert("Arvasit liian pienen luvun!");
+      	}else if (arvaus > 6){
+      		window.alert("Arvasit liian suuren luvun!");
+      	}else{
+      		window.alert("Yritä edes.");
+      	};
+      }
+
+      </script>
+
+      <h4>Arvaa luku 1-10</h4>
+
+      <input type="text" id="luku2" value="0" >
+      <input type="button" value="Arvaa" onClick="tarkista3();" >
+
+
+
+
+
+
   </div>
   </div>
   </body>

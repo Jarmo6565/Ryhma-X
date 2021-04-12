@@ -88,8 +88,6 @@ console.log(voittoNumero);
       document.write("Numero on pienempi!");
     }
 
-  }
-
 
 
 

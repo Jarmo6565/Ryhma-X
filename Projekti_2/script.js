@@ -33,13 +33,9 @@ else if (document.getElementById('nappi10').clicked == true) {
 return 10;
 }
 }
+
 function myFunction() {
 
-
-/* OOn laittanu tänne nyt erilaisia ideoita millä sen sais tehtyä
-pitää vaan tuumailla miten saa kaiken toimii ja miten saa
-laskettua ne käyttäjän klikkaukset ja samalla tarkistettua
-onko se oikea vastaus*/
 var pelaajanArvaus = arvauskone();
 
 if (pelaajanArvaus === voittoNumero) {
@@ -64,67 +60,10 @@ else {
 }
 }
 
-
-
-/*document.getElementById("nappi1").onclick;
-var but2 = parseInt(document.getElementById("nappi2").value);
-var but3 = parseInt(document.getElementById("nappi3").value);
-var but4 = parseInt(document.getElementById("nappi4").value);
-var but5 = parseInt(document.getElementById("nappi5").value);
-var but6 = parseInt(document.getElementById("nappi6").value);
-var but7 = parseInt(document.getElementById("nappi7").value);
-var but8 = parseInt(document.getElementById("nappi8").value);
-var but9 = parseInt(document.getElementById("nappi9").value);
-var but10 = parseInt(document.getElementById("nappi10").value);*/
-
-
 //console.log(pelaajanArvaus);
 console.log(voittoNumero);
 //console.log(arvaukset);
 
-    /*Tämä voi olla hyvä tapa ehkä?
-    if (document.getElementById("nappi1").clicked == true) && (this.pelaajanArvaus === this.voittoNumero) {
-    */ /*
-    but1.onclick = function klikkaus() {
-    arvaukset++;
-    disp.innerHTML = arvaukset;
-    }
-    but2.onclick = function klikkaus() {
-    arvaukset++;
-    disp.innerHTML = arvaukset;
-    }
-    but3.onclick = function klikkaus() {
-    arvaukset++;
-    disp.innerHTML = arvaukset;
-    }
-    but4.onclick = function klikkaus() {
-    arvaukset++;
-    disp.innerHTML = arvaukset;
-    }
-    but5.onclick = function klikkaus() {
-    arvaukset++;
-    disp.innerHTML = arvaukset;
-    }
-    but6.onclick = function klikkaus() {
-    arvaukset++;
-    disp.innerHTML = arvaukset;
-    }
-    but7.onclick = function klikkaus() {
-    arvaukset++;
-    disp.innerHTML = arvaukset;
-    }
-    but8.onclick = function klikkaus() {
-    arvaukset++;
-    disp.innerHTML = arvaukset;
-    }
-    but9.onclick = function klikkaus() {
-    arvaukset++;
-    disp.innerHTML = arvaukset;
-    }
-    but10.onclick = function klikkaus() {
-    arvaukset++;
-    disp.innerHTML = arvaukset;
-    }
 
 
 
@@ -150,8 +89,6 @@ console.log(voittoNumero);
     }
 
   }
-
-*/
 
 
 

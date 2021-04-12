@@ -1,7 +1,12 @@
 
 function myFunction() {
 
-var voittoNumero = Math.ceil(Math.random() * 10);
+/* OOn laittanu tänne nyt erilaisia ideoita millä sen sais tehtyä
+pitää vaan tuumailla miten saa kaiken toimii ja miten saa
+laskettua ne käyttäjän klikkaukset ja samalla tarkistettua
+onko se oikea vastaus*/
+var pelaajanArvaus =
+var voittoNumero = Math.floor(Math.random()*10 + 1);
 var but1 = parseInt(document.getElementById("nappi1").value);
 var but2 = parseInt(document.getElementById("nappi2").value);
 var but3 = parseInt(document.getElementById("nappi3").value);
@@ -14,6 +19,10 @@ var but9 = parseInt(document.getElementById("nappi9").value);
 var but10 = parseInt(document.getElementById("nappi10").value);
 var arvaukset = 0;
 
+
+    /*Tämä voi olla hyvä tapa ehkä?
+    if (document.getElementById("nappi1").clicked == true) && (this.pelaajanArvaus === this.voittoNumero) {
+    */
     but1.onclick = function klikkaus() {
     arvaukset++;
     disp.innerHTML = arvaukset;

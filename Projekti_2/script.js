@@ -1,5 +1,7 @@
+
 function myFunction() {
 
+var voittoNumero = Math.ceil(Math.random() * 10);
 var but1 = parseInt(document.getElementById("nappi1").value);
 var but2 = parseInt(document.getElementById("nappi2").value);
 var but3 = parseInt(document.getElementById("nappi3").value);
@@ -10,51 +12,73 @@ var but7 = parseInt(document.getElementById("nappi7").value);
 var but8 = parseInt(document.getElementById("nappi8").value);
 var but9 = parseInt(document.getElementById("nappi9").value);
 var but10 = parseInt(document.getElementById("nappi10").value);
+var arvaukset = 0;
 
-function numeroVoittaja(min, max) {
-  min = 1;
-  max = 10;
+    but1.onclick = function klikkaus() {
+    arvaukset++;
+    disp.innerHTML = arvaukset;
+    }
+    but2.onclick = function klikkaus() {
+    arvaukset++;
+    disp.innerHTML = arvaukset;
+    }
+    but3.onclick = function klikkaus() {
+    arvaukset++;
+    disp.innerHTML = arvaukset;
+    }
+    but4.onclick = function klikkaus() {
+    arvaukset++;
+    disp.innerHTML = arvaukset;
+    }
+    but5.onclick = function klikkaus() {
+    arvaukset++;
+    disp.innerHTML = arvaukset;
+    }
+    but6.onclick = function klikkaus() {
+    arvaukset++;
+    disp.innerHTML = arvaukset;
+    }
+    but7.onclick = function klikkaus() {
+    arvaukset++;
+    disp.innerHTML = arvaukset;
+    }
+    but8.onclick = function klikkaus() {
+    arvaukset++;
+    disp.innerHTML = arvaukset;
+    }
+    but9.onclick = function klikkaus() {
+    arvaukset++;
+    disp.innerHTML = arvaukset;
+    }
+    but10.onclick = function klikkaus() {
+    arvaukset++;
+    disp.innerHTML = arvaukset;
+    }
 
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
-class Game {
-
-  constructor() {
-    // Pelaajan nykyinen arvaus
-    this.pelaajanArvaus = null;
-    // Pitää sisällään pelaajan tähänastiset arvaukset
-    this.arvaukset = []
-    // Arpoo meille voittavan numeron
-    this.voittoNumero = numeroVoittaja()
-  }
 
 
-tarkistus() {
 
     // Voitto
     if (this.pelaajanArvaus === this.voittoNumero) {
-      return "Voitit pelin!";
+      document.write("Voitit pelin!");
     }
 
     // Häviö
-    if (this.arvaukset.length >= 3) {
-      return "Hävisit pelin";
+    if (arvaukset.length >= 3) {
+      document.write("Hävisit pelin");
     }
 
     // Numero on suurempi
     if (Math.abs(this.pelaajanArvaus - this.voittoNumero) < 0) {
-      return "Numero on suurempi!"
+      document.write("Numero on suurempi!");
     }
 
     // Numero on pienempi
     if (Math.abs(this.pelaajanArvaus - this.voittoNumero) > 0) {
-      return "Numero on pienempi!"
+      document.write("Numero on pienempi!");
     }
 
   }
-}
-}
 
 
 

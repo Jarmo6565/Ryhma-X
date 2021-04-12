@@ -1,6 +1,5 @@
 var voittoNumero = Math.floor(Math.random()*10 + 1);
-
-function myFunction() {
+var arvaukset = 1;
 
 function arvauskone () {
   if (document.getElementById('nappi1').clicked == true){
@@ -33,12 +32,15 @@ return 9;
 else if (document.getElementById('nappi10').clicked == true) {
 return 10;
 }
+}
+function myFunction() {
+
+
 /* OOn laittanu tänne nyt erilaisia ideoita millä sen sais tehtyä
 pitää vaan tuumailla miten saa kaiken toimii ja miten saa
 laskettua ne käyttäjän klikkaukset ja samalla tarkistettua
 onko se oikea vastaus*/
 var pelaajanArvaus = arvauskone();
-var arvaukset = 0;
 
 if (pelaajanArvaus === voittoNumero) {
   document.getElementById("voitto").innerHTML = "Voitit Pelin!";
@@ -61,7 +63,7 @@ else {
   arvaukset++;
 }
 }
-}
+
 
 
 /*document.getElementById("nappi1").onclick;
@@ -73,11 +75,13 @@ var but6 = parseInt(document.getElementById("nappi6").value);
 var but7 = parseInt(document.getElementById("nappi7").value);
 var but8 = parseInt(document.getElementById("nappi8").value);
 var but9 = parseInt(document.getElementById("nappi9").value);
-var but10 = parseInt(document.getElementById("nappi10").value);
+var but10 = parseInt(document.getElementById("nappi10").value);*/
 
 
-console.log(pelaajanArvaus);
-}
+//console.log(pelaajanArvaus);
+console.log(voittoNumero);
+//console.log(arvaukset);
+
     /*Tämä voi olla hyvä tapa ehkä?
     if (document.getElementById("nappi1").clicked == true) && (this.pelaajanArvaus === this.voittoNumero) {
     */ /*

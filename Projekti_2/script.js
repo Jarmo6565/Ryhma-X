@@ -2,11 +2,14 @@ var voittoNumero = Math.floor(Math.random()*10 + 1);
 var arvaukset = 1;
 
 function arvauskone () {
-  if (document.getElementById('nappi1').clicked == true){
+
+
+  if (document.getElementById("nappi1").clicked == true) {
+    alert("button");
   return 1;
 }
-  else if (document.getElementById('nappi2').clicked == true) {
-  return 2;
+else if (document.getElementById('nappi2').clicked == true) {
+return 2;
 }
 else if (document.getElementById('nappi3').clicked == true) {
 return 3;
@@ -32,11 +35,15 @@ return 9;
 else if (document.getElementById('nappi10').clicked == true) {
 return 10;
 }
+
 }
+
+var pelaajanArvaus =Function("arvauskone()");
 
 function myFunction() {
 
-var pelaajanArvaus = arvauskone();
+
+
 
 if (pelaajanArvaus === voittoNumero) {
   document.getElementById("voitto").innerHTML = "Voitit Pelin!";
@@ -60,8 +67,8 @@ else {
 }
 }
 
-//console.log(pelaajanArvaus);
-console.log(voittoNumero);
+console.log(pelaajanArvaus);
+//console.log(voittoNumero);
 //console.log(arvaukset);
 
 

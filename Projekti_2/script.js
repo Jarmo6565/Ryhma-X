@@ -3,49 +3,75 @@ var arvaukset = 1;
 
 function arvauskone () {
 
+  //$(function() {
 
-  if (document.getElementById("nappi1").clicked == true) {
-    alert("button");
-  return 1;
-}
-else if (document.getElementById('nappi2').clicked == true) {
-return 2;
-}
-else if (document.getElementById('nappi3').clicked == true) {
-return 3;
-}
-else if (document.getElementById('nappi4').clicked == true) {
-return 4;
-}
-else if (document.getElementById('nappi5').clicked == true) {
-return 5;
-}
-else if (document.getElementById('nappi6').clicked == true) {
-return 6;
-}
-else if (document.getElementById('nappi7').clicked == true) {
-return 7;
-}
-else if (document.getElementById('nappi8').clicked == true) {
-return 8;
-}
-else if (document.getElementById('nappi9').clicked == true) {
-return 9;
-}
-else if (document.getElementById('nappi10').clicked == true) {
-return 10;
-}
+  //$("#nappi1").hide(1000);
+//});
+
+
+    $("#nappi1").click(function() {
+    var btn1 = $(this).val();
+
+    });
+
+    $("#nappi2").click(function() {
+      var btn2 = $(this).val();
+
+    });
+
+    $("#nappi3").click(function() {
+      var btn3 = $(this).val();
+
+    });
+
+    $("#nappi4").click(function() {
+      var btn4 = $(this).val();
+
+    });
+
+    $("#nappi5").click(function() {
+      var btn5 = $(this).val();
+
+    });
+
+    $("#nappi6").click(function() {
+      var btn6 = $(this).val();
+
+    });
+
+    $("#nappi7").click(function() {
+      var btn7 = $(this).val();
+
+    });
+
+    $("#nappi8").click(function() {
+      var btn8 = $(this).val();
+
+    });
+
+    $("#nappi9").click(function() {
+      var btn9 = $(this).val();
+
+    });
+
+    $("#nappi10").click(function() {
+      var btn10 = $(this).val();
+
+    });
+
+
 
 }
 
-var pelaajanArvaus =Function("arvauskone()");
+
+var pelaajanArvaus = Function ("arvauskone()").val;
 
 function myFunction() {
 
 
 
 
-if (pelaajanArvaus === voittoNumero) {
+if (this.pelaajanArvaus === voittoNumero) {
   document.getElementById("voitto").innerHTML = "Voitit Pelin!";
 }
 
@@ -55,7 +81,7 @@ else if (arvaukset >= 3) {
 }
 
 // Numero on suurempi
-else if (pelaajanArvaus < voittoNumero) {
+else if (this.pelaajanArvaus < voittoNumero) {
   document.getElementById("suuri").innerHTML = "Numero on suurempi!";
   arvaukset++;
 }
@@ -68,14 +94,14 @@ else {
 }
 
 console.log(pelaajanArvaus);
-//console.log(voittoNumero);
-//console.log(arvaukset);
+console.log(voittoNumero);
+console.log(arvaukset);
 
 
 
 
 
-    // Voitto
+/*    // Voitto
     if (this.pelaajanArvaus === this.voittoNumero) {
       document.write("Voitit pelin!");
     }

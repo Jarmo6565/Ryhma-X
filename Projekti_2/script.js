@@ -1,24 +1,22 @@
 var voittoNumero = Math.floor(Math.random()*10 + 1);
 var arvaukset = 1;
 
-function myFunction() {
+function myFunction(numero) {
 
-  $('[name=nappi]').click(function() {
-  var pelaajanArvaus = $(this).val();
+var pelaajanArvaus = numero.value;
 
-});
 
-if (this.pelaajanArvaus === voittoNumero) {
+if (pelaajanArvaus == voittoNumero) {
   document.getElementById("voitto").innerHTML = "Voitit Pelin!";
 }
 
 // Häviö
-else if (arvaukset >= 3) {
+if (arvaukset >= 3) {
   document.getElementById("havio").innerHTML = "Hävisit Pelin!";
 }
 
 // Numero on suurempi
-else if (this.pelaajanArvaus < voittoNumero) {
+if (pelaajanArvaus < voittoNumero) {
   document.getElementById("suuri").innerHTML = "Numero on suurempi!";
   arvaukset++;
 }
@@ -30,6 +28,6 @@ else {
 }
 }
 
-console.log(pelaajanArvaus);
+//console.log(pelaajanArvaus);
 console.log(voittoNumero);
-console.log(arvaukset);
+//console.log(arvaukset);

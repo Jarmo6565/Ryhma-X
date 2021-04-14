@@ -30,4 +30,25 @@ $(document).ready(function() {
   $("#suuri").hide(5000);
   $("#pieni").hide(5000);
 });
+
+var voitot = 0;
+var haviot = 0;
+
+  switch() {
+    case 1:
+    result = voitto;
+    break;
+    case 2:
+    result = havio;
+    break;
+  }
+
+document.getElementById("tulokset").innerHTML = result;
+    if (result === voitto){
+        voitot++;
+    } else if (result === havio){
+        haviot++;
+    }
+    document.getElementById("voittoRuutu").innerHTML = voitot;
+    document.getElementById("havioRuutu").innerHTML = haviot;
 }

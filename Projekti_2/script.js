@@ -1,6 +1,6 @@
 var voittoNumero = Math.floor(Math.random()*10 + 1);
 var arvaukset = 1;
-
+console.log(voittoNumero);
 function myFunction(numero) {
 
 var pelaajanArvaus = numero.value;
@@ -22,12 +22,12 @@ if (pelaajanArvaus < voittoNumero) {
 }
 
 // Numero on pienempi
-else {
+if (pelaajanArvaus > voittoNumero) {
   document.getElementById("pieni").innerHTML = "Numero on pienempi!";
   arvaukset++;
 }
+$(document).ready(function() {
+  $("#suuri").hide(5000);
+  $("#pieni").hide(5000);
+});
 }
-
-//console.log(pelaajanArvaus);
-console.log(voittoNumero);
-//console.log(arvaukset);

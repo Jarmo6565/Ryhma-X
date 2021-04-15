@@ -98,6 +98,14 @@ button:hover {
   text-shadow: 2px 2px 2px #4d004d;
 }
 
+#havio {
+  text-align: center;
+  font-size: 25px;
+  font-family: Comic Sans MS;
+  color: #ff0000;
+  text-shadow: 2px 2px 2px #4d004d;
+}
+
 #havioRuutu, #voittoRuutu {
   color: #ffff00;
   border-radius: 5px;

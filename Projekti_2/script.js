@@ -5,7 +5,8 @@ var arvaukset = 1;
 //Voitot ja häviöt pelin alussa
 var voitot = 0;
 var haviot = 0;
-console.log(voittoNumero);
+
+
 function myFunction(numero) {
 
 //Se numero mitä pelaaja klikkaa otetaan kiinni tähän
@@ -15,14 +16,17 @@ var pelaajanArvaus = numero.value;
 if (pelaajanArvaus == voittoNumero) {
   document.getElementById("voitto").innerHTML = "Voitit Pelin!";
   //Tän kun linkkaisi sais saman tien voitto ja häviöruutuihin yhden lisää
-  voittoRuutu++;
+  voitot++;
+  document.getElementById('voittoRuutu').innerHTML  = voitot;
 }
 
-// Häviö
-if (arvaukset >= 3) {
+// Häviö (Lisäsin että pelaajanarvaus ei saa kolmannella arvauksellakaan
+//olla oikein jotta se ei väitä että tulee samaan aikaan voitto ja häviö)
+if (arvaukset >= 3 && pelaajanArvaus != voittoNumero) {
   document.getElementById("havio").innerHTML = "Hävisit Pelin!";
   //Tän kun linkkaisi sais saman tien voitto ja häviöruutuihin yhden lisää
-  havioRuutu++;
+  haviot++;
+  document.getElementById('havioRuutu').innerHTML  = haviot;
 }
 
 // Numero on suurempi
@@ -37,11 +41,11 @@ if (pelaajanArvaus > voittoNumero) {
   arvaukset++;
 }
 //Kun ruutuun tulee teksti "Numero on suurempi/pienempi" se häviää
-//5 sekunnin kuluessa
-$(document).ready(function() {
+//puolen sekunnin kuluessa
+//$(document).ready(function() {
   $("#suuri").hide(5000);
   $("#pieni").hide(5000);
-});
+//});
 
 // Laitoin tän osion kommenteiksi jos keksis yksinkertaisemman metodin
 

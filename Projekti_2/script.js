@@ -40,10 +40,6 @@ if (pelaajanArvaus > voittoNumero) {
   arvaukset++;
 }
 function pelaaUudestaan() {
-  //Arvo voittonumero
-  var voittoNumero = Math.floor(Math.random()*10 + 1);
-  //Meneillään oleva arvaus pelin alkaessa
-  var arvaukset = 1;
-  //$(".box2 *").prop("disabled", false);
+  
 }
 }

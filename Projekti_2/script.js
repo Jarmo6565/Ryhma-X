@@ -15,7 +15,6 @@ var pelaajanArvaus = numero.value;
 //Jos pelaajan arvaus on oikea vastaus
 if (pelaajanArvaus == voittoNumero) {
   document.getElementById("voitto").innerHTML = "Voitit Pelin!";
-  //Tän kun linkkaisi sais saman tien voitto ja häviöruutuihin yhden lisää
   voitot++;
   document.getElementById('voittoRuutu').innerHTML  = voitot;
 }
@@ -24,7 +23,6 @@ if (pelaajanArvaus == voittoNumero) {
 //olla oikein jotta se ei väitä että tulee samaan aikaan voitto ja häviö)
 if (arvaukset >= 3 && pelaajanArvaus != voittoNumero) {
   document.getElementById("havio").innerHTML = "Hävisit Pelin!";
-  //Tän kun linkkaisi sais saman tien voitto ja häviöruutuihin yhden lisää
   haviot++;
   document.getElementById('havioRuutu').innerHTML  = haviot;
 }

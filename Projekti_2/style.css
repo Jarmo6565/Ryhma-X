@@ -1,6 +1,7 @@
 body {
   background-color: #800080;
   padding: 5px;
+  text-align: center;
 }
 
 h1 {
@@ -37,7 +38,9 @@ button {
 }
 
 button:hover {
+  color: #990099;
   box-shadow: 0px 2px 15px 2px #ffff00;
+  background-color: #ffff00;
 }
 
 .container {
@@ -52,6 +55,7 @@ button:hover {
   width: 48%;
   height: 450px;
   text-align: center;
+  margin: auto;
 }
 
 .box1 {
@@ -75,7 +79,6 @@ button:hover {
 }
 
 #but1 {
-  text-align: center;
   font-family: Comic Sans MS;
   text-shadow: 0px 0px 2px #660066;
   color: #660066;

@@ -1,28 +1,41 @@
-var plus = "+";
-var miinus = "-";
-var kerto = "*";
-var jako = "/";
-var pros  = "%";
 var luku = "";
+var numero = "";
 
 //Lisää napeista haetut arvot/merkit peräkkäin laskimen ruutuun
 function lisaa(arvo){
   var arvo = arvo.value;
-  var lasku =  luku+=arvo;
-  document.getElementById("ruutu").innerText = lasku;
+  var lasku = luku+=arvo;
+  document.getElementById("ruutu").innerHTML = lasku;
 //console.log(lasku);
 }
 
+//Hakee ruudusta valuen ja muuntaa sen laskutoimitukseksi -- EI TOIMI
 function laske(){
-var yht = document.getElementByName("merkit").value;
-//var tulos = eval(merkki);
-//document.getElemementById("ruutu").value;
-console.log(yht);
+  var nrot = document.getElementById("ruutu").innerHTML;
+  var yht = eval(nrot);
+  document.getElementById("ruutu").innerHTML = yht;
+//console.log(yht);
 }
 
+function plusMiinus(){
+  var posNeg = document.getElementById("ruutu").innerHTML;
+  var negPos = posNeg * -1;
+  document.getElementById("ruutu").innerHTML = "-" + negPos;
+// console.log(negPos);
+}
+
+//Poistaa viimeisen merkin
+function poista(){
+  var del = document.getElementById("ruutu").innerHTML;
+  document.getElementById("ruutu").innerHTML = del.substr(0,del.length -1);
+  var ruutu = document.getElementById("ruutu").innerHTML;
+  if (ruutu.value == "" || ruutu.length < 1){
+    document.getElementById("ruutu").innerHTML = 0;
+//console.log("böö");
+}
+}
 
 //Nollaa laskimen ruudun
-function tyhjenna(clr){
-  var clr = clr.value;
-  document.getElementById("ruutu").innerHTML = clr;
-}
+/*function tyhjenna(){
+  window.location.reload();
+}*/

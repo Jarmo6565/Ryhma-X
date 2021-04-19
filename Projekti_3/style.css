@@ -16,8 +16,8 @@ body {
 
 button {
   background-color: rgb(251, 255, 179);
-  height:40px;
-  width:40px;
+  height:auto;
+  width:18%;
   font-weight:bold;
   font-size: 120%;
 
@@ -34,10 +34,13 @@ button:active {
 
 #ruutu {
   width: 75%;
+  margin-left:auto;
+  margin-right:auto;
+  background-color: white;
   border: 2px solid black;
   text-align:right;
   margin-bottom:2%;
-  font-size:14pt;
+  font-size:16pt;
   font-weight:bold;
 }
 

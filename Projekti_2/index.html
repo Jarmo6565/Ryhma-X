@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <script type="text/javascript" src="jyri.js" charset="utf-8"></script>
-    <script type="text/javascript" src="jquery.js" charset="utf-8"></script>
+    <script type="text/javascript" src="script.js" charset="utf-8"></script>
       <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
     <title>Arvauspeli</title>
@@ -10,7 +9,7 @@
   <body>
     <h1>Arvauspeli</h1>
     <h3>Paina numeroa ja arvaa mitä lukua haetaan!</h3>
-    <button id="but1" onClick="pelaaUudestaan();">Pelaa uudestaan</button>
+    <button id="but1" value=0 onClick="myFunction(this);">Pelaa uudestaan</button>
     <div class="container">
     <div class="box1">
       <p>Voitot</p>
@@ -18,22 +17,22 @@
     </div>
     <div class="box2">
       <div class="ekarivi">
-      <button type="button" value=1 onclick="myFunction(this)">1</button>
-      <button type="button" value=2 onclick="myFunction(this)">2</button>
-      <button type="button" value=3 onclick="myFunction(this)">3</button>
+      <button type="button" id="1" value=1 onclick="myFunction(this)">1</button>
+      <button type="button" id="2" value=2 onclick="myFunction(this)">2</button>
+      <button type="button" id="3" value=3 onclick="myFunction(this)">3</button>
     </div>
     <div class="tokarivi">
-      <button type="button" value=4 onclick="myFunction(this)">4</button>
-      <button type="button" value=5 onclick="myFunction(this)">5</button>
-      <button type="button" value=6 onclick="myFunction(this)">6</button>
+      <button type="button" id="4" value=4 onclick="myFunction(this)">4</button>
+      <button type="button" id="5" value=5 onclick="myFunction(this)">5</button>
+      <button type="button" id="6" value=6 onclick="myFunction(this)">6</button>
     </div>
     <div class="kolmasrivi">
-      <button type="button" value=7 onclick="myFunction(this)">7</button>
-      <button type="button" value=8 onclick="myFunction(this)">8</button>
-      <button type="button" value=9 onclick="myFunction(this)">9</button>
+      <button type="button" id="7" value=7 onclick="myFunction(this)">7</button>
+      <button type="button" id="8" value=8 onclick="myFunction(this)">8</button>
+      <button type="button" id="9" value=9 onclick="myFunction(this)">9</button>
     </div>
       <div class="neljasrivi">
-      <button type="button" value=10 onclick="myFunction(this)">10</button>
+      <button type="button" id="10" value=10 onclick="myFunction(this)">10</button>
     </div>
     <div class="tulokset">
       <div id="voitto"></div>

@@ -14,10 +14,10 @@ function lisaa(arvo){
 }
 
 function laske(){
-var merkki = document.getElementByName("merkit").value;
-var tulos = eval(merkki);
+var yht = document.getElementByName("merkit").value;
+//var tulos = eval(merkki);
 //document.getElemementById("ruutu").value;
-console.log(tulos);
+console.log(yht);
 }
 
 

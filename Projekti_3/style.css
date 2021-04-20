@@ -52,3 +52,11 @@ button:active {
 #tulos:hover {
   background-color:red;
 }
+
+#tyhja {
+  color: rgb(251, 255, 179);
+}
+
+#tyhja:hover {
+  color: rgb(239, 255, 0);
+}

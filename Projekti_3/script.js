@@ -9,7 +9,7 @@ function lisaa(arvo){
 //console.log(lasku);
 }
 
-//Hakee ruudusta valuen ja muuntaa sen laskutoimitukseksi -- EI TOIMI
+//Hakee ruudusta valuen ja muuntaa sen laskutoimitukseksi
 function laske(){
   var nrot = document.getElementById("ruutu").innerHTML;
   var yht = eval(nrot);
@@ -17,6 +17,7 @@ function laske(){
 //console.log(yht);
 }
 
+//Tekee numerosta positiivisen tai negatiivisen
 function plusMiinus(){
   var posNeg = document.getElementById("ruutu").innerHTML;
   var negPos = posNeg * -1;

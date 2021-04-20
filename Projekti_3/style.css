@@ -42,6 +42,7 @@ button:active {
   margin-bottom:2%;
   font-size:16pt;
   font-weight:bold;
+  overflow:hidden;
 }
 
 #tulos {

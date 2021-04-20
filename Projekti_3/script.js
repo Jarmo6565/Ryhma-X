@@ -1,5 +1,4 @@
 var luku = "";
-var numero = "";
 
 //Lisää napeista haetut arvot/merkit peräkkäin laskimen ruutuun
 function lisaa(arvo){
@@ -23,7 +22,6 @@ function prosentti(){
   var desimaaleiksi = yhteensa / 100; // Muuttaa tuloksen desimaaleiksi
 document.getElementById("ruutu").innerHTML = desimaaleiksi; // Näyttää tuloksen ruudussa
 }
-
 
 //Poistaa viimeisen merkin
 function poista(){

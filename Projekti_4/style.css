@@ -1,0 +1,25 @@
+body {
+  padding: 40px;
+}
+
+.lista {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  height: auto;
+  border: 1px solid black;
+  padding: 40px;
+}
+
+input {
+  width: 300px;
+  height: 30px;
+  margin-right: 20px;
+  padding: 2px;
+}
+
+#nappi {
+  width: 50px;
+  height: 35px;
+  padding: 2px;
+}
